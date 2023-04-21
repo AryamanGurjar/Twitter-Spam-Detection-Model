@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Spam Detector Results</title>
+
+</head>
+
+<body>
+	<h1>Spam Detector Results</h1>
+	<!-- <h3>**Here 1 = Spam and 0 = Not Spam</h3> -->
+	<table style="border: 1px solid black">
+		{% for row in result_map %}
+		<tr>
+			<td style="border: 1px solid black">{{ row['tweet'] }}</td>
+			<td style="border: 1px solid black">{{ row['prediction'] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+
+</html>
